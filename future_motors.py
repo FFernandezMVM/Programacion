@@ -11,12 +11,10 @@ class Vehicle:
 
     # TASCA: Fes el Setter amb seguretat anti-frau
     def actualitzar_kms(self, nous_kms): 
-        if nous_kms <= self.__kms:
-            print("No se pueden bajar los kilometros. ")
+        if nous_kms < self.__kms:
             return False
         else:
-            self._kms = nous_kms
-            print("Kilometros actualizados.")
+            self.__kms = nous_kms   
             return True
         # Si nous_kms és més petit que self.__kms, retorna False.
         # Si és correcte, actualitza i retorna True.
