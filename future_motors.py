@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from xml.parsers.expat import model
 
 class Vehicle(ABC):
     def __init__(self, matricula, model, kms_inicials):
